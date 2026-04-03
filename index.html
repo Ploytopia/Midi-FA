@@ -520,7 +520,7 @@ const CASES = [
     symptom:'Switch registers input on some presses but fails randomly on others. No consistent pattern — the same button works one press, fails the next. No correlation with press duration or force.',
     hypothesis:[
       'Cold solder joint on switch pin — mechanical flex temporarily restores contact then loses it',
-      'Micro-crack in PCB trace near switch footprint, intermittently opening the path',
+      'Jumper wire not fully seated in breadboard — loose contact; slight vibration from button press causes the wire to shift, intermittently breaking the connection.',
       'Oxidised contact surface causing variable resistance under the joint',
     ],
     test:'Probe FPGA input pin with oscilloscope during repeated presses. Switch to multimeter continuity mode across switch pins — listen for beep dropout mid-press. Wiggle the board to reproduce.',
